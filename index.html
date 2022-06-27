@@ -6,9 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
     <title>Calculator</title>
 </head>
 <body>
-    
+    <main>
+        <div class="screen-container">
+                <h1 id="number">123456789</h1>
+        </div>
+        <div class="button-container">
+            <div class="left-container">
+                <button class="keypad-button">7</button>
+                <button class="keypad-button">8</button>
+                <button class="keypad-button">9</button>
+                <button class="keypad-button">4</button>
+                <button class="keypad-button">5</button>
+                <button class="keypad-button">6</button>
+                <button class="keypad-button">1</button>
+                <button class="keypad-button">2</button>
+                <button class="keypad-button">3</button>
+                <button class="keypad-button">AC</button>
+                <button class="keypad-button">0</button>
+                <button class="keypad-button">.</button>
+            </div>
+            <div class="right-container">
+                <button class="keypad-button keypad-right keypad-red">÷</button>
+                <button class="keypad-button keypad-right keypad-red">x</button>
+                <button class="keypad-button keypad-right keypad-red">-</button>
+                <button class="keypad-button keypad-right keypad-red">+</button>
+            </div>
+        </div>
+        <div class="equal-sign-container"> 
+            <button id="equalButton" class="keypad-red"> = </button>
+        </div>
+    </main>
 </body>
 </html>
