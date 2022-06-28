@@ -5,37 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    
+    <script src="script.js" defer></script>
     <title>Calculator</title>
 </head>
 <body>
+    <header>Calculator made using JavaScript!!</header>
+    <br>
     <main>
         <div class="screen-container">
-                <h1 id="number">123456789</h1>
+            <h1 id="number"></h1>
         </div>
         <div class="button-container">
             <div class="left-container">
-                <button class="keypad-button">7</button>
-                <button class="keypad-button">8</button>
-                <button class="keypad-button">9</button>
-                <button class="keypad-button">4</button>
-                <button class="keypad-button">5</button>
-                <button class="keypad-button">6</button>
-                <button class="keypad-button">1</button>
-                <button class="keypad-button">2</button>
-                <button class="keypad-button">3</button>
-                <button class="keypad-button">AC</button>
-                <button class="keypad-button">0</button>
-                <button class="keypad-button">.</button>
+                <button class="keypad-button keypad-number">7</button>
+                <button class="keypad-button keypad-number">8</button>
+                <button class="keypad-button keypad-number">9</button>
+                <button class="keypad-button keypad-number">4</button>
+                <button class="keypad-button keypad-number">5</button>
+                <button class="keypad-button keypad-number">6</button>
+                <button class="keypad-button keypad-number">1</button>
+                <button class="keypad-button keypad-number">2</button>
+                <button class="keypad-button keypad-number">3</button>
+                <button class="keypad-button" id="clear-button">AC</button>
+                <button class="keypad-button keypad-number">0</button>
+                <button class="keypad-button keypad-number">.</button>
             </div>
             <div class="right-container">
-                <button class="keypad-button keypad-right keypad-red">÷</button>
-                <button class="keypad-button keypad-right keypad-red">x</button>
-                <button class="keypad-button keypad-right keypad-red">-</button>
-                <button class="keypad-button keypad-right keypad-red">+</button>
+                <button class="keypad-button keypad-right keypad-red" id="divide">÷</button>
+                <button class="keypad-button keypad-right keypad-red" id="multiply">x</button>
+                <button class="keypad-button keypad-right keypad-red" id="subtract">-</button>
+                <button class="keypad-button keypad-right keypad-red" id="add">+</button>
             </div>
         </div>
         <div class="equal-sign-container"> 
