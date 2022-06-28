@@ -11,8 +11,8 @@ let firstNumToCalculate;
 let tempNumHolder;
 
 function add(a,b) {
-    let num1 = parseInt(a);
-    let num2 = parseInt(b);
+    let num1 = parseFloat(a);
+    let num2 = parseFloat(b);
     console.log("You just added");
     
     return num1 + num2;
@@ -20,28 +20,28 @@ function add(a,b) {
 }
 
 function subtract(a,b) {
-    let num1 = parseInt(a);
-    let num2 = parseInt(b);
+    let num1 = parseFloat(a);
+    let num2 = parseFloat(b);
     console.log("You just subtract");
     return num1 - num2;
 
 }
 
 function multiply(a,b) {
-    let num1 = parseInt(a);
-    let num2 = parseInt(b);
+    let num1 = parseFloat(a);
+    let num2 = parseFloat(b);
     console.log("You just multiply");
-    return num1 * num2;
+    return (num1 * num2).toFixed(10);
 }
 
 function divide(a, b) {
-    let num1 = parseInt(a);
-    let num2 = parseInt(b);
+    let num1 = parseFloat(a);
+    let num2 = parseFloat(b);
     console.log("You just divide");
     if (num2 === 0) {
         return;
     }
-    return num1 / num2;
+    return (num1 / num2).toFixed(10);
 }
 
 function operate(operator, a, b) {
